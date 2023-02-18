@@ -16,8 +16,8 @@ body{
 
 .container{
     position: relative;
-    height: 800px;
-    width: 800px;
+    height: 100px;
+    width: 400px;
     background-color: rgb(255, 255, 255);
     padding: 20px;
     border-radius: 20px;
@@ -33,7 +33,7 @@ body{
     -o-border-radius: 20px;
 }
 
-.search-box{
+.search_box{
     width: 100%;
     height: min-content;
     display: flex;
@@ -41,7 +41,7 @@ body{
     justify-content: space-between;
 }
 
-.search-box input{
+.search_box input{
     color: black;
     font-size: 20px;
     font-weight: 600;
@@ -49,7 +49,7 @@ body{
     padding-left: 30px;
 }
 
-.search-box input::placeholder{
+.search_box input::placeholder{
 
     color: rgb(36, 78, 140);
     font-size: 20px;
@@ -58,7 +58,7 @@ body{
 
 }
 
-.search-box button{
+.search_box button{
     cursor: pointer;
     width: 50px;
     height: 50px;
@@ -77,27 +77,27 @@ body{
     -o-transition: 0.3s ease;
 }
 
-.search-box button:hover{
+.search_box button:hover{
     color: rgb(82, 126, 0);
     background: rgb(222, 250, 110);
 }
 
-.search-box i {
+.search_box i {
     position: absolute;
     color: rgb(12, 40, 111);
     font-size: 20px;
 }
 
-.box-whether{
+.box_weather{
     text-align: center;
 }
 
-.whether_box img{
+.weather_box img{
     width: 60%;
     margin-top: 40px;
 }
 
-.whether_box .temperature{
+.weather_box .temperature{
     position: relative;
     color: red;
     margin-top: 40px;
@@ -113,7 +113,7 @@ body{
     font-size: 20px;
 }
 
-.whether_box .description{
+.weather_box .description{
     position: absolute;
     font-size:20px;
     font-weight: 500;
@@ -122,7 +122,7 @@ body{
 }
 
 
-.detail_whether{
+.weather_detail{
 
     display: flex;
     width:100%;
@@ -132,5 +132,70 @@ body{
 }
 
 
+.weather_detail .humidity, .weather_detail .wind{
+
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 50%;
 
 
+}
+
+
+.weather_detail .humidity{
+
+    padding-left: 20px;
+    justify-content: flex-end;
+}
+
+.weather_detail .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+
+.weather_detail i {
+
+    color: rgb(46, 0, 229);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.weather_detail span{
+    color: rgb(135, 89, 89);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.not_found{
+    width: 100%;
+    scale: 0;
+    opacity: 0;
+    display: none;
+  
+}
+
+.not_found img{
+    width: 70%;
+}
+
+.whether_box, .weather_detail{
+    scale: 0;
+    opacity: 0;
+}
+
+
+.fadeIn {
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+    -webkit-animation: 0.5s fadeIn forwards;
+}
+
+@keyframes fadeIn {
+
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
