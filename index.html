@@ -1,70 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>Clima</title>
- 
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
+      <div class="search_box">
+        <i class="fa-solid fa-location"></i>
+        <input type="text" placeholder="Ciudad a buscar" />
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
 
-<div class="search_box">
-    <i class="fa-solid fa-location"></i>
-    <input type="text"  placeholder="Ciudad a buscar">
-    <button class="fa-solid fa-magnifying-glass"></button>
-</div>
+      <div class="not_found">
+        <img src="./invalid.png" />
+        <p>Introdujo una direccion invalida</p>
+      </div>
 
+      <div class="weather_box">
+        <img src="" />
+        <p class="description"></p>
+        <p class="temperature"></p>
+      </div>
 
-<div class="not_found">
-    <img src="./invalid.png">
-    <p>Introdujo una direccion invalida</p>
-</div>
+      <div class="weather_detail">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
 
-
-<div class="weather_box">
-    <img src="" >
-    <p class="description"></p>
-    <p class="temperature"></p>
-</div>
-
-
-<div class="weather_detail">
-    
-    <div class="humidity">
-    <i class="fa-solid fa-water"></i>
-    
-    <div class="texto">
-    <span></span>
-    <p >Humidity</p>
-     </div>
-    
-    </div>
-
-    <div class="wind">
-        <i class="fa-solid fa-wind"></i>
-
-        <div class="texto">
+          <div class="texto">
             <span></span>
-            <p >Wind</p>
+            <p>Humidity</p>
+          </div>
         </div>
 
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+
+          <div class="texto">
+            <span></span>
+            <p>Wind</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </body>
 
-
-</div>
-
-
-
-    </div>
-    
-</body>
-
-<script src="https://kit.fontawesome.com/d4c6b2d63e.js" crossorigin="anonymous"></script>
-<script src="index.js"></script>
-
-
+  <script
+    src="https://kit.fontawesome.com/d4c6b2d63e.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
 </html>
