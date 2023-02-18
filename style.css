@@ -19,18 +19,11 @@ body{
     height: 100px;
     width: 400px;
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 28px 32px;
     border-radius: 20px;
     overflow: hidden;
     transition: 0.3s ease-out;
-    -webkit-transition: 0.3s ease-out;
-    -moz-transition: 0.3s ease-out;
-    -ms-transition: 0.3s ease-out;
-    -o-transition: 0.3s ease-out;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    
 }
 
 .search_box{
@@ -63,18 +56,11 @@ body{
     width: 50px;
     height: 50px;
     color: rgb(67, 34, 98);
-    font-size: 25px;
+    font-size: 20px;
     background: rgb(241, 78, 78);
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
     transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
+   
 }
 
 .search_box button:hover{
@@ -88,36 +74,37 @@ body{
     font-size: 20px;
 }
 
-.box_weather{
+.weather_box{
     text-align: center;
 }
 
 .weather_box img{
     width: 60%;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .weather_box .temperature{
     position: relative;
-    color: red;
-    margin-top: 40px;
-    margin-left: 20px;
+    color: rgb(1, 1, 1);
+    font-weight: 800;
+    margin-top: 30px;
+    margin-left: -15px;
     font-size: 20px;
 
 }
 
 .whether_box .temperature span{
-
-    margin-left: 30px;
+    
     position: absolute;
-    font-size: 20px;
+    margin-left: 5px;
+    font-size: 10px;
 }
 
 .weather_box .description{
-    position: absolute;
+    
     font-size:20px;
     font-weight: 500;
-    color: brown;
+    color: rgb(47, 125, 242);
     text-transform: capitalize;
 }
 
@@ -128,7 +115,7 @@ body{
     width:100%;
     justify-content: space-between;
     margin-top: 30px;
-    height:100px;
+  
 }
 
 
@@ -144,22 +131,25 @@ body{
 
 
 .weather_detail .humidity{
-
+  
     padding-left: 20px;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .weather_detail .wind{
+   
     padding-right: 20px;
     justify-content: flex-end;
 }
 
 .weather_detail i {
 
-    color: rgb(46, 0, 229);
+    color: rgb(162, 159, 176);
     font-size: 20px;
-    margin-top: 20px;
+    font-weight: 500;
+    margin-top: 5px;
     margin-right: 10px;
+ 
 }
 
 .weather_detail span{
@@ -168,8 +158,16 @@ body{
     font-size: 20px;
 }
 
+.weather_detail p{
+    color: #06283D;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .not_found{
     width: 100%;
+    text-align: center;
+    margin-top: 50px;
     scale: 0;
     opacity: 0;
     display: none;
@@ -178,6 +176,13 @@ body{
 
 .not_found img{
     width: 70%;
+}
+
+.not_found p{
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
 }
 
 .whether_box, .weather_detail{
