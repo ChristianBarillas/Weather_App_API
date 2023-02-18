@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 131, 195);
+}
+
+.container{
+    position: relative;
+    height: 800px;
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box input{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 30px;
+}
+
+.search-box input::placeholder{
+
+    color: rgb(36, 78, 140);
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+
+}
+
+.search-box button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    color: rgb(67, 34, 98);
+    font-size: 25px;
+    background: rgb(241, 78, 78);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.search-box button:hover{
+    color: rgb(82, 126, 0);
+    background: rgb(222, 250, 110);
+}
+
+.search-box i {
+    position: absolute;
+    color: rgb(12, 40, 111);
+    font-size: 20px;
+}
+
+.box-whether{
+    text-align: center;
+}
+
+.whether_box img{
+    width: 60%;
+    margin-top: 40px;
+}
+
+.whether_box .temperature{
+    position: relative;
+    color: red;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
+
+.whether_box .temperature span{
+
+    margin-left: 30px;
+    position: absolute;
+    font-size: 20px;
+}
+
+.whether_box .description{
+    position: absolute;
+    font-size:20px;
+    font-weight: 500;
+    color: brown;
+    text-transform: capitalize;
+}
+
+
+.detail_whether{
+
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    margin-top: 30px;
+    height:100px;
+}
+
+
+
+
