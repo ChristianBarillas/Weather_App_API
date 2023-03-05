@@ -15,12 +15,14 @@ search.addEventListener("click", () => {
   )
     .then((response) => response.json())
     .then((json) => {
-      if (json.cod === "404") {
+      if (json.code =="404") {
         container.style.height = "400px";
         weatherdetail.style.display = "none";
         weatherbox.style.display = "none";
         error.style.display = "block";
         error.classList.add = "fadeIn";
+
+
         return;
       }
 
